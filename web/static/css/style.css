@@ -1,0 +1,166 @@
+body, h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 13px;
+    background-color: #f5f5f5; 
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: #f5f5f5; 
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px #b411b9;
+}
+
+main {
+    padding: 20px;
+}
+
+.resource-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #6a0dad;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 0;
+}
+
+.retro-style {
+    background-color: #f4faff; 
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #ccc; 
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted dodgerblue;
+}
+
+.category-header img {
+    max-width: 16px;
+    max-height: 16px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.category-header h3 {
+    font-size: 16px;
+    margin-bottom:10px;
+    line-height: 1;
+    color: #1e0c2b;
+    text-shadow: 1px 1px 1px #b411b9;
+}
+
+.item-link {
+    font-size: 9px;
+    color: #ce8afc;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out; 
+    opacity: 0;
+    vertical-align: middle;
+}
+
+
+.item:hover + .item-link  {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.tag {
+    float: right;
+    margin-left: 2px;
+    font-size: 10px;
+    border-radius: 2px;
+    background-color: #ce8afc;
+    padding: 3px;
+    color: #f4faff;
+}
+
+a.tag:hover {
+    color: #ffffff;
+    background-color: #0077cc;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 8px;
+    padding-left: 46px;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff7f50; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: white;
+}
+
+footer img {
+    width: 12px;
+    padding-left: 15px;   
+}
+
+@keyframes flash {
+    0% { background-color: #ff7f50; } 
+    100% { background-color: initial; }
+}
+
+.flashing {
+    animation: flash 1.5s ease-in-out;
+}
+
+.favorite {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-right: 22px;
+    margin-left: -44px;
+}
